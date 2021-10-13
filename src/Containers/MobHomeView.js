@@ -21,7 +21,7 @@ import TopBorder from "../Components/TopBorder";
 import FeaturedProjects from "../Components/FeaturedProjects";
 // import HeroImage from "../Components/HeroImage";
 import MainImg from "../images/ogden-background.jpg";
-import MobileMainImg from "../images/ogden-portrait.jpg"
+import MobileMainImg from "../images/me_sepia.jpg"
 
 const TestWrapper = styled.div`
 
@@ -77,17 +77,11 @@ const Home = () => {
         <BottomBorder></BottomBorder>
         <DesktopWrapper>
           <DesktopTitle
-            // bgColor={{ background: "linear-gradient(to bottom, #f8f8f8 45% , #926d8c 45%)" }}
             bgColor={{ backgroundImage: `url(${MainImg})` }}
             title={"Hello, I'm Colin"}
             titleColor={{ color: 'white' }}
-            // subTitle={"section about me"}
             titleText={"I'm Colin Richards a web developer"}
-          // finalText={"final little outro text if I need any"} 
-
           />
-          {/* 
-          <HeroImage src={Slc}></HeroImage> */}
           <FeaturedProjects
             strokeColor={{ webkitTextStrokeColor: "#ff253a" }}
           />
@@ -131,11 +125,8 @@ const Home = () => {
             bgColor={{ backgroundImage: `url(${MobileMainImg})` }}
             title={"hello,"}
             titleColor={{ color: 'white' }}
-            // subTitle={"section about me"}
             titleText={"I'm Colin Richards a web developer"}
-          // finalText={"final little outro text if I need any"}  
           />
-          {/* <HeroImage src={WalkerBuilding}></HeroImage> */}
           <FeaturedProjects />
           <ProjectCard
             path={"/project2"}
